@@ -1,0 +1,309 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.wrapper {
+    max-width: 1440px;
+}
+.header {
+    box-sizing: border-box;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    min-height: 721px;
+    padding: 55px 75px 70px 80px;
+}
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 170px;
+}
+.header__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__article {
+    max-width: 515px;
+    /*background-image: url(images/illustration-mockups.svg);
+    background-repeat: no-repeat;*/
+}
+.header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    line-height: 60px;
+}
+.header__text {
+    line-height: 30px;
+    opacity: 0.75;
+    margin-top: 30px;
+}
+.header__picture {
+    max-width: 685px;
+    max-height: 485px;
+}
+.btn {
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px hsl(208deg 11% 90%), -1px 1px 5px hsl(208deg 11% 90%);
+}
+.btn--pink {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-size: 0.9rem;
+}
+.btn__header--white {
+    font-size: 12px;
+    padding: 15px 66px;
+    color:hsl(208, 11%, 55%);
+}
+.btn__header--big {
+    display: inline-block;
+    margin-top: 15px;
+    width: 282px;
+    height: 57px;
+    text-align:center;
+    line-height: 57px;
+}
+.btn__body--big {
+    display: inline-block;
+    width: 402px;
+    height: 80px;
+    text-align:center;
+    line-height: 80px;
+    margin-top: 45px;
+    font-size: 18px;
+}
+.benefits {
+    padding: 150px 100px 0px 100px;;
+    display: flex;
+    flex-direction: column;
+    max-width: 1235px;
+    align-items: center;
+}
+.benefits__block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px  hsl(192, 100%, 9%), -5px 5px 20px  hsl(192, 100%, 9%);
+    border-radius: 15px;
+    padding: 50px 40px 55px 120px;
+}
+.benefits__picture {
+    max-width: 420px;
+    max-height: 320px;
+    /*padding: 50px 40px 55px 40px; */
+}
+.benefits__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+}
+.benefits__text {
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.benefits__article {
+    padding-right: 179px;
+    padding-top: 115px;
+}
+.benefits__article--left {
+    padding-left: 155px;
+    padding-right: 0px;
+}
+.question {
+    flex-direction: column;
+    padding: 75px 135px 53px 134px;
+    max-width: 805px;
+    align-items: center;
+    position: relative;
+    top: 115px;
+    background-color: white;
+}
+.question__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.footer{
+    padding: 145px 75px 65px 115px;
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    font-size: 15px;
+}
+.logo--white {
+    fill: white;
+    margin-bottom: 40px;
+    height: 40px;
+}
+.footer__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__block-first {
+    max-width: 380px;
+}
+.network {
+    display: inline;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.footer__link {
+    text-decoration: none;  
+    color: hsl(193, 100%, 96%);
+}
+.information--point {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.footer__lastlist {
+    margin-bottom: 110px;
+}
+.footer__link--line:hover {
+    text-decoration: underline;
+}
+.footer__link--pink:hover {
+    color: hsl(322, 100%, 66%);
+}
+.icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+.network {
+    display: inline;
+    margin-left: 10px;
+    font-size: 30px;
+}
+@media (max-width: 800px){
+    .wrapper {
+        max-width: 750px;
+    }
+    .header {
+        background-image: url(images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 750px;
+        min-height: 1440px;
+        padding: 55px 32px 70px 30px;
+    }
+    .header__body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header__article {
+        max-width: 600px;
+    }
+    .header__title {
+        font-size: 2.8rem;
+        line-height: 60px;
+    }
+    .header__text {
+        line-height: 50px;
+        margin-top: 40px;
+        font-size: 31px;
+    }
+    .btn__header--big {
+        margin-top: 65px;
+        width: 482px;
+        height: 82px;
+        line-height: 82px;
+    }
+    .btn--pink {
+        font-size: 1.4rem;
+    }
+    .header__picture {
+        max-width: 595px;
+        max-height: 420px;
+        margin-top: 110px;
+    }
+    .benefits {
+        padding: 120px 39px 10px 39px;;
+        max-width: 672px;
+    }
+    .benefits__block {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 110px 85px 75px 80px;
+    }
+    .benefits__picture {
+        order: -1;
+        max-width: 495px;
+        max-height: 390px;
+        margin-bottom: 125px;
+        /*padding: 50px 40px 55px 40px; */
+    }
+    .benefits__article {
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    .benefits__article--left {
+        padding-left: 0px;
+    }
+    .benefits__title {
+        font-size: 2.2rem;
+    }
+    .benefits__text {
+        margin-top: 45px;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: lighter;/*не работает почему? не подключена такая толщинашрифта?( */
+    }
+    .question {
+        padding: 90px 50px 80px 50px;
+        top: 190px;
+    }
+    .question__text {
+        font-size: 33px; 
+    }
+    .footer{
+        padding: 275px 30px 100px 30px;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .logo--white {
+        margin-bottom: 60px;
+        height: 50px;
+    }
+    .footer__blocks {
+        flex-direction: column;
+    }
+    .icon {
+        display: inline-block;
+        margin-right: 55px;
+    }
+    .information--point {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .footer__block-first {
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+    .footer__lastlist {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 115px;
+    }
+    .network {
+        display: inline;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .footer__link--pink {
+        font-size: 65px;
+    }
+    .foter__copyright {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+}
